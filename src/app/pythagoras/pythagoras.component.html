@@ -1,0 +1,28 @@
+<svg:rect
+  [attr.width]="w"
+  [attr.height]="w"
+  x="0"
+  y="0"
+  [style.fill]="getFill()" />
+<svg:g
+  app-pythagoras
+  *ngIf="lvl < maxlvl - 1 && nextLeft >= 1"
+  [w]="nextLeft"
+  x="0"
+  [y]="-nextLeft"
+  [lvl]="lvl + 1"
+  [maxlvl]="maxlvl"
+  [heightFactor]="heightFactor"
+  [lean]="lean"
+  [left]="true" />
+<svg:g
+  app-pythagoras
+  *ngIf="lvl < maxlvl - 1 && nextRight >= 1"
+  [w]="nextRight"
+  [x]="w - nextRight"
+  [y]="-nextRight"
+  [lvl]="lvl + 1"
+  [maxlvl]="maxlvl"
+  [heightFactor]="heightFactor"
+  [lean]="lean"
+  [right]="true" />
