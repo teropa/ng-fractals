@@ -28,7 +28,7 @@
   "devDependencies": {
     "@angular/compiler-cli": "2.4.0",
     "@types/node": "^6.0.42",
-    "angular-cli": "1.0.0-beta.21",
+    "angular-cli": "1.0.0-beta.24",
     "codelyzer": "2.0.0-beta.4",
     "ts-node": "1.7.2",
     "tslint": "4.1.1",
